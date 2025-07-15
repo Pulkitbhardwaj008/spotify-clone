@@ -1,11 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/utility.css">
 </head>
+
 <body>
-    
+    <div class="container flex bg-black">
+        <div class="left border">
+            <div class="close">
+                <img class="invert" src="img/cross.svg" alt="">
+            </div>
+            <div class="home bg-grey rounded m-1">
+                <div class="logo"><img class="invert" src="img/logo.svg" alt=""></div>
+                <ul>
+                    <li> <img class="invert" src="img/home.png" alt="">Home</li>
+                    <li> <img class="invert" src="img/search.png" alt="">Search</li>
+                    <link rel="stylesheet" href="https://sets.hugeicons.com/YOUR-SET-ID.css" crossorigin="anonymous">
+                </ul>
+            </div>
+            <div class="liberary bg-grey rounded m-1">
+                <div class="heading">
+                    <img class="invert" src="img/playlist.svg" alt="">
+                    <h2>
+                        Your Library
+                    </h2>
+                </div>
+                <div class="songlist">
+                    <ul>
+                        <li>
+                            <img class="invert" src="img/music.svg" alt="">
+                            <div class="info">
+                                <div>Song name </div>
+                                <div>Song Artist</div>
+                            </div>
+                            <div class="playnow">
+                                <span>Play Now</span>
+                                <img class="invert" src="img/play.svg" alt="">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer">
+                    <div><a href="https://www.spotify.com/in-en/legal/"><span>Legal</span></a></div>
+                    <div><a href="https://www.spotify.com/in-en/safetyandprivacy/"><span>Safety & Privacy
+                                Center</span></a></div>
+                    <div><a href="https://www.spotify.com/in-en/legal/privacy-policy/"><span>Privacy
+                                Policy</span></a></div>
+                    <div><a href="https://www.spotify.com/in-en/legal/cookies-policy/"><span>Cookies</span></a>
+                    </div>
+                    <div><a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3"><span>About
+                                Ads</span></a></div>
+                    <div><a href="https://www.spotify.com/in-en/accessibility/"><span>Accessibility</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right bg-grey border " style="margin: 9px 0;;">
+            <div class="header rounded ">
+                <div class="nav">
+                    <div class="hamburgercontainer">
+                        <img class="invert , hamburger" src="img/hamburger.svg" alt="">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            class="injected-svg"
+                            data-src="https://cdn.hugeicons.com/icons/arrow-left-01-stroke-rounded.svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" role="img" color="#ffffff">
+                            <path d="M15 6C15 6 9.00001 10.4189 9 12C8.99999 13.5812 15 18 15 18" stroke="#ffffff"
+                                stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            class="injected-svg"
+                            data-src="https://cdn.hugeicons.com/icons/arrow-right-01-stroke-rounded.svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" role="img" color="#ffffff">
+                            <path d="M9.00005 6C9.00005 6 15 10.4189 15 12C15 13.5812 9 18 9 18" stroke="#ffffff"
+                                stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                    </div>
+                </div>
+                <div class="button">
+                    <button class="signupbtn">Sign up</button>
+                    <button class="loginbtn">Login</button>
+                </div>
+            </div>
+            <div class="spotifyPlaylist">
+                <h1>Spotify Playlists</h1>
+                <div class="cardcontainer">
+
+                    <div data-folder="sidhu" class="card">
+                        <div class="play">
+                            <svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="50" cy="50" r="45" fill="#1ED760" />
+                                <polygon points="40,30 40,70 70,50" fill="black" />
+                            </svg>
+                        </div>
+                        <img src="songs\sidhu\sidhu.png.jpg" alt="Song">
+                        <h2>5911</h2>
+                        <p>Sidhu Moosewalla</p>
+                    </div>
+
+                    <div data-folder="mix" class="card">
+                        <div class="play">
+                            <svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="50" cy="50" r="45" fill="#1ED760" />
+                                <polygon points="40,30 40,70 70,50" fill="black" />
+                            </svg>
+                        </div>
+                        <img src="songs/mix/cover.jpg" alt="Song">
+                        <h2>Mixed Songs</h2>
+                        <p>Punjabi x Haryanvi</p>
+                    </div>
+
+                    <div data-folder="rap" class="card">
+                        <div class="play">
+                            <svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="50" cy="50" r="45" fill="#1ED760" />
+                                <polygon points="40,30 40,70 70,50" fill="black" />
+                            </svg>
+                        </div>
+                        <img src="songs/rap/cover.jpg" alt="Song">
+                        <h2>RAP🔥</h2>
+                        <p>Wear Headphones</p>
+                    </div>
+
+                    <div data-folder="liked" class="card">
+                        <div class="play">
+                            <svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="50" cy="50" r="45" fill="#1ED760" />
+                                <polygon points="40,30 40,70 70,50" fill="black" />
+                            </svg>
+                        </div>
+                        <img src="songs/liked/cover.jpg" alt="Song">
+                        <h2>❤️</h2>
+                        <p>Liked Songs</p>
+                    </div>
+
+                    <div data-folder="fire" class="card">
+                        <div class="play">
+                            <svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="50" cy="50" r="45" fill="#1ED760" />
+                                <polygon points="40,30 40,70 70,50" fill="black" />
+                            </svg>
+                        </div>
+                        <img src="songs/fire/cover.jpg" alt="Song">
+                        <h2>Phonk Musics</h2>
+                        <p>🔥</p>
+                    </div>
+
+                    <div data-folder="old" class="card">
+                        <div class="play">
+                            <svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="50" cy="50" r="45" fill="#1ED760" />
+                                <polygon points="40,30 40,70 70,50" fill="black" />
+                            </svg>
+                        </div>
+                        <img src="songs/old/cover.jpg" alt="Song">
+                        <h2>Old Songs</h2>
+                        <p>90's Hit Music</p>
+                    </div>
+
+                    <div data-folder="Her" class="card">
+                        <div class="play">
+                            <svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="50" cy="50" r="45" fill="#1ED760" />
+                                <polygon points="40,30 40,70 70,50" fill="black" />
+                            </svg>
+                        </div>
+                        <img src="songs/her/cover.jpg" alt="Song">
+                        <h2>Which Reminds</h2>
+                        <p>Her</p>
+                    </div>
+
+                <div class="playbar">
+                    <div class="seekbar">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="bar">
+                        <div class="songinfo"></div>
+                        <div class="songbuttons">
+                            <img width="35" id="previous" src="img/previous.svg" alt="">
+                            <img width="35" id="play" src="img/play.svg" alt="">
+                            <img width="35" id="next" src="img/next.svg" alt="">
+                        </div>
+                        <div class="vol">
+                            <div class="songtime"></div>
+                            <div class="volume">
+                                <img src="img/volume.svg" alt="">
+                                <div class="range">
+                                    <input type="range" name="volume" id="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="js/script1.js"></script>
 </body>
+
 </html>
